@@ -58,8 +58,11 @@ Invoke-WebRequest -Method Post -Uri http://localhost:3000/auth/login -Headers @{
 **Screenshots / output**
 
 - docs/screenshots/sqli-1.png (Screenshot of successful login)
+ <img width="888" height="529" alt="sqli-1" src="https://github.com/user-attachments/assets/5b6932fc-9507-4016-a32e-7f7e57128e7e" />
 
-- docs/screenshots/sqli-output.txt (Raw JSON output)
+
+- docs/screenshots/sqli-output.txt (Raw JSON output): [sqli-output.txt](https://github.com/user-attachments/files/22599180/sqli-output.txt)
+
 
 **5) Mitigation and Fix:**
 
