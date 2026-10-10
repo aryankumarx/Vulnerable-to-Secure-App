@@ -39,7 +39,7 @@ app.post('/auth/login', async (req, res) => {
         WHERE username = '${email}' AND password = '${password}'
     `;
 
-    console.log(`Executing vulnerable query: ${query}`);
+    // [GitFixAI] Removed debug log
 
     try {
         const result = await pool.query(query);
@@ -68,4 +68,4 @@ app.post('/auth/login', async (req, res) => {
 // Original route (check server status)
 app.get('/', (req, res) => res.send('Hello World! Server is connected.'));
 
-app.listen(port, () => console.log(`Server running on port ${port}`));
+app.listen(port, () => // [GitFixAI] Removed debug log);
